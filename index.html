@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Website</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">MyBrand</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Build Something Amazing</h2>
+      <p>Modern, responsive, and clean design for your next project.</p>
+      <button onclick="scrollToSection('features')">Get Started</button>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Lightning fast performance optimized for users.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Looks perfect on all devices and screen sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Modern</h3>
+        <p>Clean UI with smooth animations and interactions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We create stunning web experiences using cutting-edge technologies.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 MyBrand. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
